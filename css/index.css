@@ -1,0 +1,292 @@
+@charset "utf-8";
+
+body{
+    width: 1920px;
+    height: 2000px;
+}
+
+.title{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.p_title{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 해더영역 */
+
+.header{
+    width: 100%;
+    /* background-color: skyblue; */
+    height: 170px;
+    background-color: rgb(205, 228, 255);
+}
+
+.header_inner{
+    width: 1200px;
+    height: 170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{}
+.logo img{}
+
+.main_menu{
+    display: flex;
+    column-gap: 20px;
+}
+.main_menu>li{
+    display: inline-block;
+}
+.main_menu>li>a{
+    padding: 70px 20px;
+    line-height: 170px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(80, 79, 79);
+}
+
+.main_menu>li:hover>a{
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.main_menu>li:hover .sub{
+    display: block;
+}
+
+.sub{
+    display: none;
+}
+.sub li{}
+.sub li a{
+    display: block;
+    border: 1px solid black;
+    padding: 5px 10px;
+    transition: all 0.3s;
+    background-color: white;
+}
+.sub li a:hover{
+    background-color: rgb(187, 187, 187);
+    color: rgb(255, 255, 255);
+}
+
+/* 슬라이드 이미지 영역 */
+
+.slide_img{
+    width: 1200px;
+    height: 491px;
+    margin: 0 auto;
+    background-image: url(/source/mmain_bg.jpg);
+}
+
+.slide_img_opa{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+}
+.slide_img_opa h1{
+    padding: 120px 0 0 100px;
+    font-size: 50px;
+    color: white;
+    text-shadow: 5px 5px 3px rgb(182, 181, 181);
+}
+
+.slide_img_opa h3{
+    padding: 30px 0 0 100px;
+    color: white;
+    font-size: 24px;
+}
+
+.slide_menu{
+    display: flex;
+    justify-content: center;
+    margin-top: 185px;
+}
+.slide_menu li{
+    
+}
+.slide_menu li a{
+    display: block;
+    padding: 20px 80px;
+    border-left: 1px solid white;
+    color: orange;
+    font-weight: bold;
+}
+
+.slide_menu li a.none{
+    border-left: 0;
+}
+
+.slide_menu li a:hover{
+    color: rgb(255, 207, 117);
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0));
+}
+
+/* 검색영역 */
+.search{
+    width: 1200px;
+    height: 150px;
+    margin: 0 auto;
+    background-color: rgb(68, 169, 252);
+    text-align: center;
+}
+
+.search span{
+    font-size: 20px;
+    margin-right: 50px;
+    line-height: 149px;
+    font-weight: bold;
+}
+.search_bar{
+    display: inline-block;
+    position: relative;
+}
+
+.search_bar input{
+    display: block;
+    width: 600px;
+    height: 76px;
+    border-radius: 38px;
+    padding-left: 30px;
+    font-size: 20px;
+}
+.search_bar img{
+    width: 41px;
+    height: 40px;
+    position: absolute;
+    top: 18px;
+    left: 530px;
+}
+
+/* 스틱키 */
+.sticky{
+    height: 100px;
+    background-color: rgb(205, 228, 255);
+    border-bottom: 2px solid rgb(117, 117, 117);
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.sticky_inner{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.stic_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.stic_menu>li{
+    padding: 0 30px;
+    border-left: 1px solid black;
+}
+
+.stic_menu>li:first-child{
+    border-left: none;
+}
+.stic_menu li a{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 인트로 영역 */
+.intro{
+    padding: 120px 0 70px;
+}
+
+.intro h2{}
+.intro>p{
+    margin-bottom: 100px;
+}
+.intro_box{
+    height: 384px;
+}
+
+.intro_mainbox{
+    height: 100%;
+    overflow: hidden;
+}
+.intro_mainbox li{
+    width: 384px;
+    height: 384px;
+    float: left;
+}
+
+.box_opa{
+    transition: all 0.3s;
+    height: 100%;
+    padding: 92px;
+}
+
+.white_box{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.white_box:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.white_box p{
+    font-size: 18px;
+    padding: 20px 0;
+    font-weight: bold;
+    color: rgb(0, 0, 0)
+}
+.white_box>a{}
+.white_box>a>img{
+    width: 50px;
+}
+
+.white_box p>a:hover{
+    color: orangered;
+}
+
+.bottom{
+    margin-bottom: 22px;
+}
+
+
+.intro_mainbox li:hover .box_opa{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.box1{
+    background: url(/source/con1.jpg) center center no-repeat;
+    background-size: cover;
+}
+.box2{
+    background: url(/source/con2.jpg) center center no-repeat;
+    background-size: cover;
+}
+.box3{
+    background: url(/source/con3.jpg) center center no-repeat;
+    background-size: cover;
+}
+.box4{
+    background: url(/source/con4.jpg) center center no-repeat;
+    background-size: cover;
+}
+.box5{
+    background: url(/source/con5.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+
